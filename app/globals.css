@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 220 30% 97%;
+    --foreground: 220 25% 18%;
+    --card: 220 30% 95%;
+    --card-foreground: 220 25% 18%;
+    --popover: 220 30% 97%;
+    --popover-foreground: 220 25% 18%;
+    --primary: 340 65% 62%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 50% 88%;
+    --secondary-foreground: 220 25% 18%;
+    --muted: 220 20% 92%;
+    --muted-foreground: 220 15% 46%;
+    --accent: 215 60% 78%;
+    --accent-foreground: 220 25% 18%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 340 65% 62%;
+    --radius: 1rem;
+    --blue: 215 70% 60%;
+    --pink: 340 65% 62%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typewriter cursor */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: hsl(340 65% 62%); }
+}
+
+/* Sparkle on click */
+@keyframes sparkle-out {
+  0% { transform: scale(0) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1) rotate(180deg); opacity: 0; }
+}
+
+/* Gentle sway */
+@keyframes sway {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(6px) rotate(2deg); }
+  75% { transform: translateX(-6px) rotate(-2deg); }
+}
+
+/* Stars twinkle */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
