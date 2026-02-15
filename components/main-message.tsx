@@ -45,7 +45,7 @@ export function MainMessage() {
       <div className="max-w-lg">
         <RevealLine delay={0} direction="left">
           <h2 className="mb-10 font-serif text-2xl font-semibold tracking-tight md:text-3xl text-balance" style={{ color: "hsl(220 25% 18%)" }}>
-            {"Untuk kamu \u2014 Alexa Shalom or Shal?"}
+            {"Untuk kamu \u2014 Alexa Shaloom or Shal?"}
           </h2>
         </RevealLine>
 
